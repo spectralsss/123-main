@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заняття 3 - Основи стилiзацii</title>
+    <link rel="stylesheet" gref="./styles/style.css">
+    <style>
+        /*
+        селектор {
+        property-name: property-value;
+        property-name:property-value;
+        ...
+        }
+        */
+        p {
+            background-color: aquamarine;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        h1 {
+            background-color: brown;
+            font-family: Verdana, Geneva, Verdana, Geneva, Tahoma, sans-serif;
+            font-size: xx-large;
+            text-align: center;
+        }
+
+        h2,
+        h3,
+        h4 {
+            background-color: blanchedalmond;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: small;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: chocolate;
+        }
+
+        #header-styled {
+            background-color: darkcyan;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+        .color-blue {
+            color: blue;
+        }
+
+        .font-style {
+            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.2em;
+            font-weight: 1000;
+            font-style: italic;
+            font-variant: small-caps;
+            line-height: 14px; */
+            font: italic small-caps bold 1.3em/17px 'Trebuchet MS';
+            word-spacing: 1rem;
+            letter-spacing: 0.5rem;
+            text-transform: capitalize;
+            /* text-indent: 2em; */
+            text-decoration: underline solid black 1px;
+            white-space: pre;
+            /* color:coral; */
+            text-align: justify;
+            color: #00ff00;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>        
+    </ol>
+    <di>
+        <dt>HTML</dt>
+        <dt>мова опису структури веб сторiнки</dt>
+        <dt>IDE</dt>
+        <dt>Iнтегроване середовище розробки</dt>
+
+    </di>
+    <div>
+        &lt;div&gt;
+        &amp;
+        &quot;
+        &nbsp;
+        &copy; &reg; &euro; &mdash; &times;
+
+
+    </div>
+    <p class="font-style">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolorum quibusdam sint
+        ratione aliquam culpa
+        libero!</p>
+    <h1>123</h1>
+    <h2>123</h1>
+        <h3 class="bg-green color-blue">123</h1>
+            <h4 class="bg-green color-blue">123</h4>
+            <h6 id="header-styled">123</h6>
+            <p style="background-color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora ipsum nemo ut quam dolor!
+            </p>
+            <p class="bg-green color-blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reiciendis.
+            </p>
+            <p class="bg-green color-blue">
+                Lorem ipsum dolor sit amet.
+            </p>
+</body>
+
+</html>

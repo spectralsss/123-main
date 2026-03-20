@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 80%;
+            min-width: 650px;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        caption {
+            text-align: right;
+            color: grey;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        th {
+            text-transform: uppercase;
+            color: #fff
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: 1mm 0;
+        }
+
+        tr td:first-child {
+            text-align: left;
+            color: #666;
+            padding-left: 0.7mm;
+        }
+
+        .col-1 {
+            background-color: #ddd;
+            width: auto;
+        }
+
+        .col-2 {
+            background-color: #1fd2ff;
+            width: 17%;
+        }
+
+        .col-3 {
+            background-color: #1bff13;
+            width: 17%;
+        }
+
+        .col-4 {
+            background-color: #ffe81b;
+            width: 17%;
+        }
+
+        .col-5 {
+            background-color: #ff0000;
+            width: 17%;
+        }
+        span{
+            color: #fff;
+            font-weight: 700;
+            font-size: 1.2mm;
+            display: inline-block;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+        }
+        thead{
+            border-bottom:1px solid #bdb9b9
+        }
+        tfoot{
+            border-top: 1px solid #aaa5a5;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Title table</caption>
+        <colgroup>
+            <col class="col-1">
+            <col class="col-2">
+            <col class="col-3">
+            <col class="col-4">
+            <col class="col-5">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>specification</th>
+                <th>free</th>
+                <th>basic</th>
+                <th>standart</th>
+                <th>premium</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum dolor.</td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>-</span></td>
+                <td><span>+</span></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>$ 0.00</th>
+                <th>$ 9.99</th>
+                <th>$ 15.99</th>
+                <th>$ 29.99</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 30%;
+            border-radius: 40%;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            /* text-align:center; */
+            padding: 10px;
+        }
+
+        td:first-child {
+            text-align: center;
+        }
+
+        .avatar-column {
+
+            background-color: cadetblue;
+            border: 2px solid black;
+            text-align: center;
+            width: 30%;
+        }
+
+        table {
+            margin: 10px;
+        }
+
+        .hide-empty {
+            border: 0;
+            empty-cells: hide;
+            border-collapse: separate;
+        }
+
+        caption {
+            border-bottom: 0;
+            border: 1px solid black;
+            background-color: rgb(107, 184, 255);
+        }
+        thead{
+            background-color: cornflowerblue;
+        }
+        tbody{
+            font-family:'Courier New', Courier, monospace;
+        }
+        tfoot{
+            background-color: darkgrey;
+            font-size: 0.5mm
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col class="avatar-column">
+            <col class="name-column">
+            <col class="email-column">
+        </colgroup>
+        <tr>
+            <th>Аватар</th>
+            <th>Ім'я</th>
+            <th>E-mail</th>
+        </tr>
+        <tr>
+            <td><img src="../lesson5/recources/1233.png" alt="avatar generic"></td>
+            <td>Джон Доу</td>
+            <td><a href="mailto:djon.dou@gmail.com">djon.dou@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td><img src="../lesson5/recources/1233.png" alt="avatar generic"></td>
+            <td>Джон Доу</td>
+            <td><a href="mailto:djon.dou@gmail.com">djon.dou@gmail.com</a></td>
+        </tr>
+        <tr>
+            <td><img src="../lesson5/recources/1233.png" alt="avatar generic"></td>
+            <td>Джон Доу</td>
+            <td><a href="mailto:djon.dou@gmail.com">djon.dou@gmail.com</a></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+
+        <tr>
+            <th>Jill</th>
+            <td>Smith</td>
+            <th>43</th>
+        </tr>
+        <tr>
+            <th>Eve</th>
+            <td>Jackson</td>
+            <th>57</th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-4561</td>
+        </tr>
+        <tr>
+            <td>555-5631</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <th>Lorem, ipsum dolor.</th>
+            <th>Lorem ipsum, dolor sit amet consectetur adipisicing.</th>
+            <th>Lorem, ipsum.</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td></td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">футер</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+
+</html>

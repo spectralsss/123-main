@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заняття 5 - Анімації</title>
+    <style>
+        * {
+            margin: 0;
+            background-color: blanchedalmond;
+
+        }
+
+        .img-container {
+            border: 3px cadetblue solid;
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            width: 40%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px black;
+
+        }
+
+        img:hover {
+            width: 60%;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        a:link {
+            color: chocolate
+        }
+
+        a:visited {
+            color: rgb(4, 135, 135);
+            text-decoration: dotted underline black 10px;
+        }
+
+        a:focus {
+            color: crimson
+        }
+
+        a:visited {}
+
+        a:focus {}
+
+        a:active {}
+        .button:hover{
+            background-color:blue;
+            border-color:darkcyan;
+        }
+        .button {
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            border: solid red 1px;
+            background-color: red;
+            border-radius: 10px;
+            transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+        }
+
+        .button a {
+            background-color: transparent;
+            color: black;
+        }
+        .transform{
+            margin:10px;
+            padding:10px;
+            height: 150px;
+            border: solid cadetblue 5px;
+
+        }
+        .square{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+        }
+        .translate-example-hover{
+            transform: translate(25px,35px)
+        }
+        .scale-example:hover{
+            
+        }
+    </style>
+</head>
+
+<body>
+<div class="tras">
+
+</div>
+    <h1>Анімації та гіперпосилання</h1>
+    <p>
+        <a href="https://github.com/">github</a>
+        <br>
+        <a href="../lesson2/index.html">Second lesson</a>
+        <br>
+        <a hreg="#img-id">посилання на елемент</a>
+    </p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit atque quae soluta veritatis accusamus.</p>
+    <div class="img-container"><img src="./recources/1233.png">
+
+    </div>
+
+</body>
+
+</html>
