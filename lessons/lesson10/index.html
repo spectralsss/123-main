@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 150px;
+            box-shadow: 2px 2px 15px black
+        }
+
+        .container {
+            background-color: coral;
+            border: cadetblue 1px solid;
+            border-radius: 15px;
+            margin: 2em;
+            padding: 1.5em;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+            gap: 1.5em;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .flex-elem {
+            width: 100px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .elem1 {
+            /* order:3; */
+            /* flex-shrink:1; */
+            background-color: green;
+        }
+
+        .elem2 {
+            /* order:4; */
+            /* flex-shrink:2; */
+            background-color: blue;
+
+            align-self: flex-start;
+        }
+
+        .elem3 {
+            flex-shrink: 2;
+            background-color: yellow;
+
+            /* order:2; */
+        }
+
+
+        .elem4 {
+            /* flex-shrink:1; */
+            background-color: red;
+            /* order:1; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="flex-elem elem1">1</div>
+        <div class="flex-elem elem2">2</div>
+        <div class="flex-elem elem3">3</div>
+        <div class="flex-elem elem4">4</div>
+        <!-- <img src="../lesson5/recources/1233.png">
+        <img src="../lesson5/recources/1233.png">
+        <img src="../lesson5/recources/1233.png"> -->
+    </div>
+</body>
+
+</html>
