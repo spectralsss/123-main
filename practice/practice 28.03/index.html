@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive and Adaptive design</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body {
+            background-color: rgb(1, 66, 66);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .card {
+            background-color: rgb(1, 66, 66);
+            color: white;
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            flex-wrap:wrap;
+        }
+        .history{
+            color:rgb(119,126,118);
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .author{
+            flex-direction:row;
+            align-items:center;
+            gap:15px;
+        }
+        .avatar{
+            border-radius:50%;
+            width: 10px;
+            height:10px;
+            
+        }
+        .top-text{
+            color:rgb(119,126,118);
+            font-size: 1em;
+        }
+        .bot-text{
+            font-size: 0.8em;
+            font-weight:600;
+        }
+        @media (min-width: 600px){
+            .card{padding:50px;}
+            h1{font-size: 2.8rem}
+            .container {
+                flex-direction: row;
+                justify-content: flex-start;
+                gap:50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <p class="history">Home / Articles</p>
+        <h1>The Difference Between Responsive and Adaptive Design</h1>
+        <div class="container">
+            <div class="item author">
+                <div class="avatar"><img src="./recources/images.png"></div>
+                <div class="item">
+                    <p class="top-text">Author</p>
+                    <p class="bot-text">Geoff Graham</p>
+                </div>
+            </div>
+            <div class="item">
+                <p class="top-text">49 Comments</p>
+                <p class="bot-text">Go to comments</p>
+            </div>
+            <div class="item">
+                <p class="top-text">Published</p>
+                <p class="bot-text">Nov 11, 2018</p>
+            </div>
+            <div class="item">
+                <p class="top-text">Updated</p>
+                <p class="bot-text">Nov 17, 2018</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
