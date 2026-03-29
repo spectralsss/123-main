@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(228, 93, 68);
+        }
+
+        fieldset {
+            background-color: rgb(230, 228, 228);
+            text-align: center;
+            box-shadow: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 350px;
+            height: 500px;
+            font-weight: bold;
+            box-shadow: 3px 5px 5px black;
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        .log input {
+            background-color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(230, 228, 228);
+            border: none;
+            width: 300px;
+            margin-bottom: 15px;
+            height: 37px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .button-login input {
+            background-color: rgb(50, 167, 90);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(230, 228, 228);
+            border: none;
+            width: 300px;
+            margin-bottom: 15px;
+            height: 37px;
+            text-align: center;
+            box-shadow: 5px ;
+            font-weight: bold;
+            box-shadow:1px 5px 1px rgb(0, 111, 38);
+        }
+
+        .button-login p {
+            color: rgb(228, 93, 68);
+            font-weight: bold;
+        }
+
+        img {
+            width: 50%;
+            margin-left: 30px;
+        }
+
+        .or-login p {
+            margin-left: 115px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .facebook {
+            margin-left: 35px;
+            background-color: rgb(58, 91, 160);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(230, 228, 228);
+            border: none;
+            width: 145px;
+            height: 37px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 3px 5px 5px black;
+            margin-right:5px;
+            
+        }
+
+        .twitter {
+            background-color: rgb(28, 183, 235);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(230, 228, 228);
+            border: none;
+            width: 145px;
+            height: 37px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 3px 5px 5px black;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend><img src="./recources/account.png"></legend>
+        <h1>Member Login</h1>
+        <br>
+        <div class="log">
+            <input type="text" name="username" id="username" placeholder="Username">
+            <br>
+            <input type="password" name="username" id="passwd" placeholder="Password">
+        </div>
+        <br>
+        <div class="button-login">
+            <input type="submit" value="Login">
+            <p>Forgot password?</p>
+        </div>
+        <br>
+
+    </fieldset>
+    <br>
+    <div class="or-login">
+        <p>... or login with:</p>
+        <br>
+        <input type="submit" value="Facebook" class="facebook">
+        <input type="submit" value="Twitter" class="twitter">
+    </div>
+
+</body>
+
+</html>

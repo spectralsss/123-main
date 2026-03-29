@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 2px solid black;
+            padding: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/register" method="post">
+        <h2>Реєстрація</h2>
+        <label for="username">Ім'я користувача: </label>
+        <input type="text" name="username" id="username">
+        <br>
+        <label for="email">Електронна пошта: </label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="passwd">Пароль: </label>
+        <input type="password" name="password" id="passwd">
+        <br>
+        <label for="about">Про себе</label>
+        <br>
+        <textarea name="about" id="about"></textarea>
+        <br>
+        <label for="agree">Приймаю ліцензію</label>
+        <input type="checkbox" name="agree" id="agree">
+
+        <fieldset>
+            <legend>Стать</legend>
+            <input type="radio" name="gender" id="genderM" value="main">
+            <label for="genderM">Чоловік</label>
+            <input type="radio" name="gender" id="genderF" value="main">
+            <label for="genderF">Жінка</label>
+
+        </fieldset>
+        <label for="fav-pizza">Улюблена піца</label>
+        <select name="fav-pizza" id="fav-pizza">
+            <option value="pepperoni">Пепероні</option>
+            <option value="margarita">Маргарита</option>
+            <option value="quatro-formaggio">Чотири сира</option>
+        </select>
+        <br>
+        <label for="fav-genre">Улюблений жанр</label>
+        <input type="text" name="fav-genre" id="fav-genre" list="genres">
+        <datalist id="genres">
+            <option value="horror">Фільм жахів</option>
+            <option value="action">Екшн</option>
+            <option value="drama">Драма</option>
+        </datalist>
+        <br>
+        <label for="birth-day">Дата народження</label>
+        <input type="date" name="birth-day" id="birth-day">
+        <br>
+        <label for="link">Соц мережі: </label>
+        <input type="url" name="link" id="link">
+        <br>
+        <label for="tall">Ваш зріст: </label>
+        <input type="number" name="tall" id="tall" min="150" max="200">
+        <br>
+        <br>
+        <input type="submit" value="Зареєструватися">
+    </form>
+    <form action="/search" method="get">
+        <h2>Пошук</h2>
+        <input type="text" name="query">
+        <input type="submit" value="Пошук" name="" id="">
+        <input type="reset" name="Очистити">
+    </form>
+</body>
+
+</html>
