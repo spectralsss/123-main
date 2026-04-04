@@ -1,0 +1,48 @@
+$color: rgb(51, 51, 51);
+$font: Arial, Helvetica, sans-serif;
+$color-font: white;
+$color-body: whitesmoke;
+
+nav {
+    background-color: $color;
+    color: $color-font;
+    font-family: $font;
+
+    border: {
+        style: solid;
+        color: black;
+        width: 2px;
+        radius: 10px;
+    }
+}
+
+body {
+    background-color: $color-body;
+
+    font : {
+        family: $font;
+        weight: bold;
+    }
+
+}
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: $color;
+
+        &:hover {
+            background-color: lighten($color, 25%);
+        }
+    }

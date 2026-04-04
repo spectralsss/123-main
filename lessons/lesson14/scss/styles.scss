@@ -1,0 +1,81 @@
+@import "_variables";
+@import "_reset";
+@import "_mixin";
+
+
+body {
+    background-color: $color;
+    font : {
+        family: $font;
+        size: $fontSize;
+        weight:bold;
+    }
+
+}
+
+.container {
+    min-width: $minWidth;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    
+    // border: {
+    //     style: solid;
+    //     color: black;
+    //     width: 2px;
+    //     radius: 10px;
+    // }
+    @include bordered();
+}
+
+nav {
+    background-color: darken($color, 25%);
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    a {
+        display: block;
+        padding: 6px 12px;
+        text-decoration: none;
+        color: $color;
+
+        &:hover {
+            background-color: lighten($color, 25%);
+        }
+    }
+
+}
+
+.danger {
+    @include bordered(#098394, 3px);
+    @include importent-text;
+    background-color: darken($color, 10%);
+}
+
+p{
+    background-color: mix(#089394, #983723, 50% );
+}
+.button-basic{
+    border: none;
+    padding:15px 30px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.button-report{
+    @extend .button-basic;
+    background-color: red;
+}
+.button-submit{
+    @extend .button-basic;
+    background-color: green;
+    color:whitesmoke;
+}
