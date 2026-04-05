@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Structure</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        header,
+        nav,
+        footer {
+            background: #6d1d3d;
+            padding: 20px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .main-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .side-left {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .aside {
+            background: #b56384;
+            padding: 40px 10px;
+        }
+
+        main {
+            width: 60%;
+            background: #b56384;
+            padding: 20px;
+        }
+
+        section {
+            background: #d694af;
+            margin-top: 15px;
+            padding: 30px;
+        }
+
+        .side-right {
+            width: 20%;
+            background: #b56384;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>HEADER</header>
+    <nav>MENU</nav>
+
+    <div class="main-container">
+        <div class="side-left">
+            <div class="aside">ASIDE 1</div>
+            <div class="aside">ASIDE 2</div>
+        </div>
+
+        <main>
+            MAIN CONTENT
+            <section>SECTION 1</section>
+            <section>SECTION 2</section>
+        </main>
+
+        <div class="side-right">
+            ASIDE 3
+        </div>
+    </div>
+
+    <footer>FOOTER</footer>
+
+</body>
+
+</html>

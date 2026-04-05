@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+     
+        .side-menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 250px;
+            background-color: rgb(133, 133, 133); 
+        }
+
+    
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+       
+        .menu-item:hover {
+            background-color: #555555;
+        }
+
+
+        .menu-item img {
+            width: 32px;
+            height: 32px;
+            margin-right: 25px;
+        }
+
+
+        .active {
+            background-color: #555555;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="side-menu">
+        <li>
+            <a href="#" class="menu-item">
+                <img src="./recources/edit.png" alt="Edit">
+                <span>Edit</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="menu-item">
+                <img src="./recources/favorites.png" alt="Favorites">
+                <span>Favorites</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="menu-item">
+                <img src="./recources/history.png" alt="History">
+                <span>History</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="menu-item active">
+                <img src="./recources/security.png" alt="Security">
+                <span>Security</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="menu-item">
+                <img src="./recources/settings.png" alt="Settings">
+                <span>Settings</span>
+            </a>
+        </li>
+    </ul>
+
+</body>
+</html>
