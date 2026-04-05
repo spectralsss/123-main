@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>William Shakespeare</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+        }
+
+      
+        .centered {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+    
+        .navbar {
+            background-color: #a03040;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-size: 14px;
+        }
+
+        
+        .navbar a:hover {
+            background-color: #70202d;
+           
+        }
+
+     
+        .main-content {
+            background-color: white;
+            padding: 30px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .source {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+      
+        .profile-section {
+            display: flex;
+            gap: 30px;
+        }
+
+        .text-block {
+            flex: 2;
+        }
+
+        .text-block p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+    
+        .info-card {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-size: 13px;
+        }
+
+        .info-card img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .info-table td {
+            vertical-align: top;
+            padding: 5px;
+        }
+
+    
+        .authors-grid {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .author-item {
+            text-align: center;
+            width: 120px;
+        }
+
+        .author-item img {
+            width: 100px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .author-item span {
+            font-size: 12px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="centered">
+            <a href="#">WRITERS</a>
+            <a href="#">Discussions</a>
+            <a href="#">Books</a>
+            <a href="#">The authors</a>
+            <a href="#">Readers</a>
+        </div>
+    </nav>
+
+    <main class="centered main-content">
+        <h1>William Shakespeare</h1>
+        <hr>
+        <p class="source">From Wikipedia, the free encyclopedia</p>
+
+        <div class="profile-section">
+            <div class="text-block">
+                <p>William Shakespeare[a] (c. 23 April 1564[b] – 23 April 1616)[c] was an English playwright, poet and
+                    actor. He is widely regarded as the greatest writer in the English language and the world's
+                    pre-eminent dramatist. He is often called England's national poet and the "Bard of Avon" or simply
+                    "the Bard". His extant works, including collaborations, consist of some 39 plays, 154 sonnets, three
+                    long narrative poems and a few other verses, some of uncertain authorship. His plays have been
+                    translated into every major living language and are performed more often than those of any other
+                    playwright. Shakespeare remains arguably the most influential writer in the English language, and
+                    his works continue to be studied and reinterpreted.</p>
+                <p>Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married
+                    Anne Hathaway, with whom he had three children: Susanna, and twins Hamnet and Judith. Sometime
+                    between 1585 and 1592 he began a successful career in London as an actor, writer, and part-owner
+                    ("sharer") of a playing company called the Lord Chamberlain's Men, later known as the King's Men
+                    after the ascension of King James VI of Scotland to the English throne. At age 49 (around 1613) he
+                    appears to have retired to Stratford, where he died three years later. Few records of Shakespeare's
+                    private life survive; this has stimulated considerable speculation about such matters as his
+                    physical appearance, his sexuality, his religious beliefs and even certain fringe theories as to
+                    whether the works attributed to him were written by others.</p>
+                <p>Shakespeare produced most of his known works between 1589 and 1613. His early plays were primarily
+                    comedies and histories and are regarded as some of the best works produced in these genres. He then
+                    wrote mainly tragedies until 1608, among them Hamlet, Othello, King Lear and Macbeth, which are
+                    considered to be among the finest works in English. In the last phase of his career, he wrote
+                    tragicomedies (also known as romances), such as The Winter's Tale and The Tempest, and collaborated
+                    with other playwrights. </p>
+                <p>Many of Shakespeare's plays were published in editions of varying quality and accuracy during his
+                    lifetime. However, in 1623 John Heminges and Henry Condell, two fellow actors and friends of
+                    Shakespeare's, published a more definitive text known as the First Folio, a posthumous collected
+                    edition of Shakespeare's dramatic works that includes 36 of his plays. Its preface includes a
+                    prescient poem by Ben Jonson, a former rival of Shakespeare, who hailed Shakespeare with the
+                    now-famous epithet: "not of an age, but for all time". </p>
+            </div>
+
+            <aside class="info-card">
+                <img src="./William_Shakespeare_by_John_Taylor.jpg" alt="Shakespeare">
+                <table class="info-table">
+                    <tr>
+                        <td><b>Born</b></td>
+                        <td>26 April 1564</td>
+                    </tr>
+                    <tr>
+                        <td><b>Died</b></td>
+                        <td>23 April 1616</td>
+                    </tr>
+                    <tr>
+                        <td><b>Spouse</b></td>
+                        <td>Anne Hathaway</td>
+                    </tr>
+                    <tr>
+                        <td><b>Children</b></td>
+                        <td>Susanna Hall, Hamnet, Judith</td>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+
+        <h3>Similar authors:</h3>
+        <div class="authors-grid">
+            <div class="author-item"><img src="https://via.placeholder.com/100" alt="Author"><span>Anne Hathaway</span>
+            </div>
+            <div class="author-item"><img src="https://via.placeholder.com/100" alt="Author"><span>Charles
+                    Dickens</span></div>
+            <div class="author-item"><img src="https://via.placeholder.com/100" alt="Author"><span>Oscar Wilde</span>
+            </div>
+            <div class="author-item"><img src="https://via.placeholder.com/100" alt="Author"><span>Miguel de
+                    Cervantes</span></div>
+            <div class="author-item"><img src="https://via.placeholder.com/100" alt="Author"><span>Edgar Allan
+                    Poe</span></div>
+            <div class="author-item"><img src="https://via.placeholder.com/100" alt="Author"><span>William
+                    Wordsworth</span></div>
+        </div>
+    </main>
+
+</body>
+
+</html>
