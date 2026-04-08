@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription Plans</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid gray;
+            transition: transform 1s ease;
+            position: relative;
+            
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 10;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .border-red {
+            border-top-color: #d9534f;
+        }
+
+        .border-orange {
+            border-top-color: #f0ad4e;
+        }
+
+        .border-blue {
+            border-top-color: #5bc0de;
+        }
+
+        .border-green {
+            border-top-color: #5cb85c;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .price span {
+            display: block;
+            font-size: 12px;
+            color: #aaa;
+            font-weight: normal;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            font-size: 11px;
+            color: #666;
+            line-height: 2;
+        }
+
+        button {
+            border: none;
+            padding: 10px 25px;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .btn-red {
+            background: #d9534f;
+        }
+
+        .btn-orange {
+            background: #f0ad4e;
+        }
+
+        .btn-blue {
+            background: #5bc0de;
+        }
+
+        .btn-green {
+            background: #5cb85c;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card border-red">
+            <h3>ENTERPRISE</h3>
+            <div class="price">$69<span>per month</span></div>
+            <ul>
+                <li>10GB disk space</li>
+                <li>100GB monthly bandwidth</li>
+                <li>20 email accounts</li>
+                <li>Unlimited subdomens</li>
+            </ul>
+            <button class="btn-red">BUY</button>
+        </div>
+
+        <div class="card border-orange">
+            <h3>PROFESSIONAL</h3>
+            <div class="price">$29<span>per month</span></div>
+            <ul>
+                <li>5GB disk space</li>
+                <li>60GB monthly bandwidth</li>
+                <li>10 email accounts</li>
+                <li>Unlimited subdomens</li>
+            </ul>
+            <button class="btn-orange">BUY</button>
+        </div>
+
+        <div class="card border-blue">
+            <h3>STANDARD</h3>
+            <div class="price">$19<span>per month</span></div>
+            <ul>
+                <li>3GB disk space</li>
+                <li>30GB monthly bandwidth</li>
+                <li>5 email accounts</li>
+                <li>Unlimited subdomens</li>
+            </ul>
+            <button class="btn-blue">BUY</button>
+        </div>
+
+        <div class="card border-green">
+            <h3>BASIC</h3>
+            <div class="price">$9<span>per month</span></div>
+            <ul>
+                <li>1GB disk space</li>
+                <li>10GB monthly bandwidth</li>
+                <li>2 email accounts</li>
+                <li>Unlimited subdomens</li>
+            </ul>
+            <button class="btn-green">BUY</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
