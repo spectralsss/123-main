@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Video Upload</title>
 </head>
-
 <body>
-    <div class="container">
-        <main>
-            <aside><img src="./recources/loading.png"></aside>
-            <section>
-                <div>
-                    <div class="box">
-                        <h1>UPLOADING 40%</h1>
-                        About 23 minutes remaining
-                        <!-- <h1>UPLOADING 40%</h1>
-                        <p>About 23 minutes remaining</p> -->
-                    </div>
-                    <div>
-                        <p>Title of video</p>
-                        <p>* Your video is still uploading. Please keep this page open until it's done</p>
-                    </div>
-                </div>
-            </section>
-            <aside>
-                DONE
-            </aside>
-        </main>
+    <div class="card">
+        <div class="thumb">
+            <img src="./recources/loading.png" alt="loading">
+        </div>
+        
+        <div class="info">
+            <div class="progress-container">
+                <div class="progress-bar">UPLOADING 40%</div>
+                <span class="time">About 23 minutes remaining</span>
+            </div>
+            
+            <div class="text">
+                <h3>Title of video</h3>
+                <p>* Your video is still uploading. Please keep this page open until it's done.</p>
+            </div>
+        </div>
+
+        <button class="btn">DONE</button>
     </div>
 </body>
-
 </html>

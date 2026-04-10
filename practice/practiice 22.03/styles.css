@@ -1,48 +1,104 @@
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 100vw;
-    min-width: 320px;
-    max-width: 1600px;
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-
+    padding: 20px;
 }
 
-main {
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 20px;
     display: flex;
-    flex-grow: 11;
-    flex-shrink: auto;
-    margin:200px;
-}
-
-aside:first-child {
-    flex-basis: 20%;
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
 }
 
-aside:last-child {
-    flex-basis: 20%;
+.thumb {
+    background: #ddd;
+    width: 150px;
+    height: 100px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-main section {
-    flex-grow: 11;
-    flex-shrink: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:auto;
+.thumb img {
+    width: 50px;
+}
 
+
+
+.progress-container {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background: #d0d8e8;
+    padding: 5px 10px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.time {
+    padding-right: 10px;
+    color: #666;
+}
+
+.text h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.text p {
+    font-size: 12px;
+    color: #777;
+}
+
+
+.btn {
+    background: #4a69ad;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .thumb {
+        width: 100%;
+        height: 200px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
