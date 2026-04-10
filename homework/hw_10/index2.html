@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        .main {
+            display: flex;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+        }
+
+        .text {
+            flex: 2;
+        }
+
+        .imgs {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .card {
+            background: #34495e;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card p {
+            color: #fff;
+            font-size: 11px;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .imgs {
+                flex-direction: row;
+            }
+
+            .card {
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .imgs {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="text">
+            <h1>Cat</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae autem ipsum harum consequatur
+                temporibus at voluptate perferendis inventore illo architecto culpa ipsa eligendi, quis cum cumque eum,
+                optio corrupti repellat nobis maiores aliquam! Voluptas vitae provident error facere nam rem ut iste at
+                consequatur consequuntur exercitationem, obcaecati libero reiciendis explicabo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae autem ipsum harum consequatur
+                temporibus at voluptate perferendis inventore illo architecto culpa ipsa eligendi, quis cum cumque eum,
+                optio corrupti repellat nobis maiores aliquam! Voluptas vitae provident error facere nam rem ut iste at
+                consequatur consequuntur exercitationem, obcaecati libero reiciendis explicabo?</p>
+        </div>
+
+        <div class="imgs">
+            <div class="card">
+                <img src="re/cat1.jpg">
+                <p>A Tabby cat in snowy weather</p>
+            </div>
+            <div class="card">
+                <img src="re/cat2.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae autem ipsum harum consequatur
+                    temporibus at voluptate perferendis inventore illo architecto culpa ipsa eligendi, quis cum cumque
+                    eum,
+                    optio corrupti repellat nobis maiores aliquam! Voluptas vitae provident error facere nam rem ut iste
+                    at
+                    consequatur consequuntur exercitationem, obcaecati libero reiciendis explicabo?</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #eee;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .box {
+            background: #004d40;
+            color: #fff;
+            padding: 40px;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        .path {
+            color: #80cbc4;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin: 20px 0 40px;
+        }
+
+        .wrap {
+            display: flex;
+            gap: 30px;
+        }
+
+        .user {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ava {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #ccc;
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .lbl {
+            font-size: 11px;
+            color: #80cbc4;
+            margin-bottom: 3px;
+        }
+
+        .val {
+            font-size: 13px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            .wrap {
+                flex-direction: column;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <p class="path">Home / Articles /</p>
+        <h1>The Difference Between Responsive and Adaptive Design</h1>
+
+        <div class="wrap">
+            <div class="user">
+                <img src="re/account.png" class="ava">
+                <div class="item">
+                    <span class="lbl">Author</span>
+                    <span class="val">Geoff Graham</span>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="item">
+                    <span class="lbl">49 Comments</span>
+                    <a href="#" class="val">Go to comments</a>
+                </div>
+                <div class="item">
+                    <span class="lbl">Published</span>
+                    <span class="val">Nov 11, 2018</span>
+                </div>
+                <div class="item">
+                    <span class="lbl">Updated</span>
+                    <span class="val">Nov 17, 2018</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
