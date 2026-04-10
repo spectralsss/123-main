@@ -1,0 +1,15 @@
+
+@import '_variables';
+@import '_mixins';
+
+@import '_buttons';
+@import '_cards';
+
+
+body {
+    font-family: $font-main;
+    background-color: #f4f4f4;
+    @include flex-center; 
+    min-height: 100vh;
+    margin: 0;
+}

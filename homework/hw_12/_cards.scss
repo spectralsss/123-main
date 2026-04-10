@@ -1,0 +1,37 @@
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: $border-radius;
+  padding: $spacer * 2;
+  max-width: 300px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+
+  
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    border-color: $primary;
+  }
+
+  
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: $border-radius / 2;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin: $spacer 0;
+    color: $dark;
+  }
+
+  &__price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $secondary;
+    margin-bottom: $spacer;
+  }
+  .btn-buy {
+    width: 100%;
+  }
+}
