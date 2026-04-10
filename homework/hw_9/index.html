@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lorem Site</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #ccc;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        header nav {
+            max-width: 1200px;
+            min-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            gap: 25px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            min-width: 600px;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        main {
+            flex: 3;
+            background: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main h2, main small, main p {
+            padding: 0 20px;
+        }
+
+        main h2 { margin-top: 20px; margin-bottom: 5px; }
+        main small { color: gray; margin-bottom: 20px; }
+
+        .image-container {
+            background: #ffd700;
+            text-align: center;
+            padding: 40px 0;
+            width: 100%;
+        }
+
+        .image-container img {
+            width: 50%;
+            height: auto;
+        }
+
+        aside {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        aside section {
+            background: white;
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            align-items: center; 
+        }
+
+       
+        li span {
+            min-width: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        li span img {
+            width: 40px;
+            height: auto;
+        }
+
+        .q p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <strong>Lorem Site</strong>
+            <span>News</span>
+            <span>Events</span>
+            <span>Courses</span>
+            <span>Jobs</span>
+            <span>Tests</span>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <h2>What is Lorem Ipsum?</h2>
+            <small>30/03/2019 11:20</small>
+            
+            <div class="image-container">
+                <img src="./re/html5img.png" alt="HTML5 Image">
+            </div>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </main>
+
+        <aside>
+            <section>
+                <h4>Events</h4>
+                <ul>
+                    <li><span><img src="./re/calendar_7.png"></span> Donec ut nisi ullamcorper, ultricies neque accumsan.</li>
+                    <li><span><img src="./re/calendar_19.png"></span> Vivamus fringilla ligula eu nunc tincidunt.</li>
+                    <li><span><img src="./re/calendar_27.png"></span> Quisque vel quam fermentum velit luctus.</li>
+                    <li><span><img src="./re/calendar_7.png"></span> Curabitur eleifend quam pulvinar nibh euismod.</li>
+                </ul>
+            </section>
+            
+            <section class="q">
+                <p><i>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</i></p>
+            </section>
+        </aside>
+    </div>
+
+</body>
+</html>
