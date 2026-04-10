@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Statistics</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e0e0e0;
+            display: flex;
+        }
+
+
+        nav {
+            width: 250px;
+            background-color: #333;
+            color: #999;
+            height: 100vh;
+            position: fixed;
+
+            left: 0;
+            top: 0;
+            padding: 20px 0;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            padding: 15px 25px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        nav li:hover {
+            background-color: #444;
+            color: white;
+        }
+
+
+        main {
+           
+            margin-left: 250px;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #444;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+
+        .charts {
+            display: flex;
+            gap: 20px;
+        }
+
+        .charts .card {
+            flex: 1;
+        }
+
+        .charts img {
+            width: 100%;
+            height: auto;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        th {
+            text-align: left;
+            background: #f9f9f9;
+            padding: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+
+        @media (max-width: 600px) {
+            body {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                height: auto;
+                position: relative;
+
+            }
+
+            nav ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 15px;
+            }
+
+            .charts {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./recources/logo.png" alt="logo">
+        </div>
+        <ul>
+            <li>DASHBOARD</li>
+            <li>USERS</li>
+            <li>FILE MANAGER</li>
+            <li>POSTS</li>
+            <li>EVENTS</li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Dashboard - May 25, 2019</h1>
+        </header>
+
+        <section class="charts">
+            <div class="card">
+                <h3>TRAFFIC</h3>
+                <img src="./recources/chart1.png" alt="traffic chart">
+            </div>
+            <div class="card">
+                <h3>USERS</h3>
+                <img src="./recources/chart2.png" alt="users chart">
+            </div>
+        </section>
+
+        <section class="table-section">
+            <div class="card">
+                <h3>RECENT ACTIVITY</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Etiam eu nisl id sem eleifend aliquam</td>
+                            <td>Phoebe Bolton</td>
+                            <td>23/05/19</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ut maximus lacus ut ante tristique</td>
+                            <td>Alona Clay</td>
+                            <td>23/05/19</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Donec eget ligula sed enim pharetra</td>
+                            <td>Ayad Khan</td>
+                            <td>24/05/19</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Curabitur bibendum odio in velit</td>
+                            <td>Allan Gayer</td>
+                            <td>25/05/19</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
