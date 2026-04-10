@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .card {
+            background: #90c5c5; 
+            width: 500px;
+            padding: 40px;
+            border-radius: 15px;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: #e67e22;
+            color: white;
+            padding: 10px 30px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .lbl {
+            display: block;
+            color: #558b8b;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .col {
+            flex: 1;
+        }
+
+        
+        .decor {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 120px;
+            height: 120px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">CREDIT CARD DETAILS</div>
+
+    <form>
+        <label class="lbl">Card Number</label>
+        <input type="text" placeholder="1234 5678 9012 3456">
+
+        <label class="lbl">Name On Card</label>
+        <input type="text" placeholder="Name Surname">
+
+        <div class="row">
+            <div class="col">
+                <label class="lbl">Expire Date</label>
+                <div class="row">
+                    <input type="text" placeholder="02">
+                    <input type="text" placeholder="2017">
+                </div>
+            </div>
+            <div class="col" style="max-width: 100px;">
+                <label class="lbl">CSV No.</label>
+                <input type="password" placeholder="****">
+            </div>
+        </div>
+    </form>
+
+
+</div>
+
+</body>
+</html>

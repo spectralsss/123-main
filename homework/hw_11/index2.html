@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+      
+        .main-box {
+            background-color: white;
+            padding: 30px;
+            width: 800px;
+            border: 1px solid #ccc;
+        }
+
+      
+        .columns-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+      
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #444;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px 0;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .short-inputs {
+            display: flex;
+            gap: 15px;
+        }
+
+        .checkbox-section {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        
+        .button-area {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        
+        .submit-button {
+            background-color: #009688;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            width: auto;
+         
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-box">
+        <form>
+            <div class="columns-container">
+
+                <div class="column">
+                    <h2>Registration form</h2>
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email address">
+                    <div class="short-inputs">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm password">
+                    </div>
+
+                    <div class="checkbox-section">
+                        <label><input type="checkbox" style="width: auto;"> I want to receive news</label><br>
+                        <label><input type="checkbox" style="width: auto;"> I agree with Terms</label>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h2>Personal details</h2>
+                    <div class="short-inputs">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <div class="short-inputs">
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <input type="date">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="button-area">
+                <button type="submit" class="submit-button">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
