@@ -1,48 +1,91 @@
-$color: rgb(51, 51, 51);
-$font: Arial, Helvetica, sans-serif;
-$color-font: white;
-$color-body: whitesmoke;
+$nav-bg: #333;
+$nav-hover-text: #aaa;
 
-nav {
-    background-color: $color;
-    color: $color-font;
-    font-family: $font;
-
-    border: {
-        style: solid;
-        color: black;
-        width: 2px;
-        radius: 10px;
-    }
-}
-
-body {
-    background-color: $color-body;
-
-    font : {
-        family: $font;
-        weight: bold;
-    }
-
-}
-
-    ul {
+.nav-menu {
+    background-color: $nav-bg;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    
+    &__list {
+        list-style: none;
+        display: flex;
         margin: 0;
         padding: 0;
-        list-style: none;
-    }
+        width: 100%;
+        justify-content: center;
 
-    li {
-        display: inline-block;
-    }
+        li {
+            position: relative;
 
-    a {
-        display: block;
-        padding: 6px 12px;
-        text-decoration: none;
-        color: $color;
+            a {
+                display: block;
+                padding: 15px 25px;
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s ease;
 
-        &:hover {
-            background-color: lighten($color, 25%);
+                &:hover {
+                    color: $nav-hover-text;
+                }
+            }
+
+            &.has-dropdown:hover .dropdown {
+                display: block;
+            }
         }
     }
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+    li a {
+        padding: 10px 20px;
+        font-size: 14px;
+        border-bottom: 1px solid #555;
+        white-space: nowrap;
+    }
+}
+
+@mixin customize-button($bg-color, $text-color, $radius) {
+    background-color: $bg-color;
+    color: $text-color;
+    border-radius: $radius;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.3s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-main {
+    @include customize-button(#007bff, white, 5px);
+}
+
+.btn-warning {
+    @include customize-button(#ff6347, white, 15px);
+}
+
+.button-container {
+    margin: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+}
