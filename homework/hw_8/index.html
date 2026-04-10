@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>123</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        div {
+            width: 500px;
+            height: 300px;
+            overflow: auto;
+            border: 1px solid #ccc;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+         
+        }
+
+        th,
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+            background: white;
+          
+        }
+
+        
+        thead th {
+            position: sticky;
+            top: 0;
+            background: lightblue;
+            z-index: 2;
+            
+        }
+
+       
+        tr td:nth-child(1),
+        tr th:nth-child(1) {
+            position: sticky;
+            left: 0;
+            background: lightcyan;
+            z-index: 1;
+            font-weight: bold;
+        }
+
+       
+        tr th:first-child {
+            z-index: 3;
+        }
+
+       
+        tr:nth-child(even) td {
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Таблиця з фіксацією</h3>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th>Header 4</th>
+                    <th>Header 5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Line 1</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>12</td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <td>Line 2</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>12</td>
+                    <td>76</td>
+                </tr>
+                <tr>
+                    <td>Line 3</td>
+                    <td>63</td>
+                    <td>25</td>
+                    <td>7</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 4</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 5</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 6</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 7</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 8</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 9</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Line 10</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
