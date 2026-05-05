@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | NFT preview card component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'soft-blue': 'hsl(215, 51%, 70%)',
+            'cyan-custom': 'hsl(178, 100%, 50%)',
+            'main-bg': 'hsl(217, 54%, 11%)',
+            'card-bg': 'hsl(216, 50%, 16%)',
+            'line-blue': 'hsl(215, 32%, 27%)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-main-bg flex flex-col justify-center items-center min-h-screen font-sans p-6">
+
+  <main class="bg-card-bg max-w-[350px] p-6 rounded-2xl shadow-2xl">
+    
+    <div class="relative group cursor-pointer overflow-hidden rounded-lg">
+      <img src="./images/image-equilibrium.jpg" alt="Equilibrium" class="w-full block transition-transform duration-500">
+      
+      <div class="absolute inset-0 bg-cyan-custom/50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <img src="./images/icon-view.svg" alt="view icon" class="w-12 h-12">
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <h1 class="text-white text-2xl font-semibold hover:text-cyan-custom cursor-pointer transition-colors duration-300">
+        Equilibrium #3429
+      </h1>
+      <p class="text-soft-blue mt-4 font-light leading-relaxed">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+    </div>
+
+    <div class="flex justify-between items-center mt-5 pb-5 border-b border-line-blue">
+      <div class="flex items-center space-x-2">
+        <img src="./images/icon-ethereum.svg" alt="ETH">
+        <span class="text-cyan-custom font-bold">0.041 ETH</span>
+      </div>
+      <div class="flex items-center space-x-2">
+        <img src="./images/icon-clock.svg" alt="Clock">
+        <span class="text-soft-blue">3 days left</span>
+      </div>
+    </div>
+
+    <div class="flex items-center mt-4 space-x-4">
+      <img src="./images/image-avatar.png" alt="Avatar" class="w-8 h-8 border border-white rounded-full">
+      <p class="text-soft-blue">
+        Creation of 
+        <span class="text-white hover:text-cyan-custom cursor-pointer transition-colors duration-300">
+          Jules Wyvern
+        </span>
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="mt-8 text-[11px] text-center text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-500 hover:underline">Frontend Mentor</a>. 
+    Coded by <a href="#" class="text-blue-500 hover:underline">Andrey Baranov</a>.
+  </footer>
+
+</body>
+</html>
