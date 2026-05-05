@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Netflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #141414;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 4%;
+            height: 68px;
+            background-color: black;
+            position: sticky;
+            top: 0;
+        }
+
+
+        .left-side,
+        .right-side {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .logo {
+            height: 25px;
+            margin-right: 25px;
+        }
+
+
+        nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            margin-right: 18px;
+            font-size: 14px;
+        }
+
+
+        .right-side span {
+            margin-left: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .right-side img {
+            width: 20px;
+        }
+
+
+        .kids-text {
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+
+        .profile-box {
+            background-color: #0073e6;
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+        }
+
+
+        main {
+            padding: 40px 4%;
+        }
+
+
+        .title-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .controls {
+            display: flex;
+            border: 1px solid gray;
+        }
+
+
+        .controls button {
+            background: black;
+            color: white;
+            border: none;
+            border-right: 1px solid gray;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+
+        .controls select {
+            background: black;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+
+        .movie-card {
+            position: relative;
+            line-height: 0;
+        }
+
+
+        .movie-card img {
+            width: 100%;
+            display: block;
+            border-radius: 2px;
+        }
+
+
+        .n-icon {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            color: #e50914;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: normal;
+        }
+
+
+        .footer {
+            padding: 50px 15%;
+            background-color: #141414;
+            color: #757575;
+
+        }
+        .footer a {
+            color: #757575;
+            text-decoration: none;
+            font-size: 13px;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .footer-country {
+            margin-top: 30px;
+            font-size: 13px;
+        }
+        .right-side img {
+            width: 20px;
+            filter: brightness(0) invert(1);
+        }
+        @media (max-width: 1024px) {
+            .movie-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px) {
+            
+            .right-side span:not(:first-child),
+            .right-side .kids-text {
+                display: none;
+            }
+            .footer {
+                padding: 40px 5%;
+            }
+        }
+        @media (max-width: 480px) {
+            .movie-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .title-row h1 {
+                font-size: 20px;
+            }
+            .logo {
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-side">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo">
+            <nav>
+                <a href="#">Головна</a>
+                <a href="#">Шоу</a>
+                <a href="#">Фільми</a>
+                <a href="#">Останнє</a>
+                <a href="#">Мій список</a>
+            </nav>
+        </div>
+        <div class="right-side">
+            <span><img src="./recources/search(1).svg"></span>
+            <span class="kids-text">ДІТИ</span>
+            <span><img src="./recources/gift-fill.svg"></span>
+            <span><img src="./recources/bell-fill.svg"></span>
+            <div class="profile-box">😊</div>
+            <span style="font-size: 10px;">▼</span>
+        </div>
+    </header>
+    <main>
+        <div class="title-row">
+            <h1>Дивіться Netflix безкоштовно</h1>
+            <div class="controls">
+                <button>☰</button>
+                <button>⠿</button>
+                <select>
+                   <option>Пропозиції для вас</option>
+                </select>
+            </div>
+        </div>
+        <div class="movie-grid">
+            <a href="./films/st.html" class="movie-card-link">
+              <div class="movie-card">
+                    <span class="n-icon">N</span>
+                    <img src="./recources/st.jpg" alt="Stranger Things">
+                </div>
+            </a>
+            <a href="./films/hoc.html" class="movie-card-link">
+                <div class="movie-card">
+                    <span class="n-icon">N</span>
+                    <img src="./recources/hoc.jpg" alt="House of Cards">
+                </div>
+            </a>
+            <a href="./films/witcher.html" class="movie-card-link">
+                <div class="movie-card">
+                    <span class="n-icon">N</span>
+                    <img src="./recources/witch.jpg" alt="The Witcher">
+                </div>
+            </a>
+            <a href="./films/qb.html" class="movie-card-link">
+                <div class="movie-card">
+                    <span class="n-icon">N</span>
+                    <img src="./recources/qg.png" alt="Queen Gambit">
+                </div>
+            </a>
+            <a href="./films/monsters.html" class="movie-card-link">
+                <div class="movie-card">
+                    <span class="n-icon">N</span>
+                    <img src="./recources/monsters.jpg" alt="Monsters">
+                </div>
+            </a>
+            <a href="./films/dark.html" class="movie-card-link">
+                <div class="movie-card">
+                    <span class="n-icon">N</span>
+                    <img src="./recources/dark.png" alt="Dark">
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Маєте запитання? <a href="#" style="display:inline;">0800 609 226</a></p>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#">Поширені запитання</a>
+                <a href="#">Конфіденційність</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Довідковий центр</a>
+                <a href="#">Вакансії</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Обліковий запис</a>
+                <a href="#">Тільки на Netflix</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Медіацентр</a>
+                <a href="#">Зв’язатися з нами</a>
+            </div>
+        </div>
+        <div class="footer-country">Netflix Україна</div>
+    </footer>
+</body> 
+</html>
